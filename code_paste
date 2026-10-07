@@ -1,0 +1,10 @@
+function reverseString(string) {
+  let stringArray = []
+  for (let i of string) {
+    // At the time, I figured unshift was the simplest way to change order; I realise I could have used .reverse(), but I think this actually uses more code;
+    // e.g. (A) stringArray.push(i) (B) let reversedArray = stringArray.reverse()
+    stringArray.unshift(i)
+  }
+  let finalString = stringArray.join("")
+  return finalString
+}
